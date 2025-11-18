@@ -3,12 +3,10 @@ name: Deploy Astro to GitHub Pages
 on:
   push:
     branches: [main]
-  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -16,38 +14,33 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          
+          node-version: 18
+          cache: npm
 
       - name: Install dependencies
-        run: npm ci
-
-      - name: Fix astro permissions
-        run: chmod +x node_modules/.bin/astro
+        run: npm install
 
       - name: Build
         run: npm run build
 
-      - name: Upload dist
-        uses: actions/upload-artifact@v4
+      - name: Create .nojekyll
+        run: touch dist/.nojekyll
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: github-pages
-          path: ./dist
+          path: dist/
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
     permissions:
       pages: write
       id-token: write
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
+    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          artifact_name: github-pages
