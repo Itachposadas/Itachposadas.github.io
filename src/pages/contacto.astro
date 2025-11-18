@@ -37,37 +37,34 @@ import DashboardLayout from "../layouts/DashboardLayout.astro";
 
         
         <div class="bg-blue-50 p-14 col-span-4">
+          
           <h2 class="mb-14 font-bold text-4xl text-blue-900 relative before:block before:absolute before:bg-sky-300 before:content-[''] before:w-20 before:h-1 before:-skew-y-3 before:-bottom-4">
             Enviar mensaje
           </h2>
 
-          <div class="grid gap-6 mb-6 grid-cols-2">
-            <div class="flex flex-col">
-              <input class="py-4 bg-white rounded-full px-6 placeholder:text-xs" placeholder="Nombre" />
-            </div>
-            <div class="flex flex-col">
-              <input class="py-4 bg-white rounded-full px-6 placeholder:text-xs" placeholder="Apellido" />
-            </div>
-          </div>
+          <form action="https://formspree.io/f/xblwrnaq" method="POST" class="space-y-6">
 
-          <div class="grid gap-6 mb-6 grid-cols-2">
-            <div class="flex flex-col">
-              <input class="py-4 bg-white rounded-full px-6 placeholder:text-xs" placeholder="Correo electrónico" />
-            </div>
-            <div class="flex flex-col">
-              <input class="py-4 bg-white rounded-full px-6 placeholder:text-xs" placeholder="Asunto" />
-            </div>
-          </div>
+            <div class="grid gap-6 mb-6 grid-cols-2">
+              <input name="nombre" class="py-4 bg-white rounded-full px-6 placeholder:text-xs" placeholder="Nombre" />
 
-          <div class="mb-6">
-            <textarea class="w-full rounded-2xl placeholder:text-xs px-6 py-4" placeholder="Escribe tu mensaje aquí" rows="8"></textarea>
-          </div>
+              <input name="apellido" class="py-4 bg-white rounded-full px-6 placeholder:text-xs" placeholder="Apellido" />
+            </div>
 
-          <div class="flex justify-center">
-            <button class="rounded-full bg-blue-900 text-white font-bold py-4 px-6 min-w-40 hover:bg-blue-800 transition-all">
-              Enviar
-            </button>
-          </div>
+            <div class="grid gap-6 mb-6 grid-cols-2">
+              <input name="correo" class="py-4 bg-white rounded-full px-6 placeholder:text-xs" placeholder="Correo electrónico" />
+
+              <input name="asunto" class="py-4 bg-white rounded-full px-6 placeholder:text-xs" placeholder="Asunto" />
+            </div>
+
+            <textarea name="mensaje" class="w-full rounded-2xl placeholder:text-xs px-6 py-4" placeholder="Escribe tu mensaje aquí" rows="8"></textarea>
+
+            <div class="flex justify-center">
+              <button class="rounded-full bg-blue-900 text-white font-bold py-4 px-6 min-w-40 hover:bg-blue-800 transition-all">
+                Enviar
+              </button>
+            </div>
+
+          </form>
 
         </div>
 
