@@ -3,7 +3,7 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://itachposadas.github.io',
+  site: 'https://Itachposadas.github.io',
   base: '/',
   integrations: [react()],
 });
