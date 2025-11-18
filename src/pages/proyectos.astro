@@ -1,0 +1,72 @@
+---
+import DashboardLayout from "../layouts/DashboardLayout.astro";
+---
+
+<DashboardLayout title="Proyectos">
+  <section class="p-10">
+    <h1 class="text-3xl font-bold mb-6">Proyectos</h1>
+    <p class="text-gray-700 mb-10 max-w-2xl">
+      Aquí encontrarás algunos proyectos que he realizado durante mi formación.  
+      Cada tarjeta muestra una breve descripción, su imagen representativa y su propósito.
+    </p>
+
+   
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="/images/electronica.png" class="w-full h-40 object-cover" alt="Proyecto 1">
+        <div class="p-5">
+          <h2 class="text-xl font-semibold mb-2">Brazo robótico</h2>
+          <p class="text-gray-600 text-sm mb-4">
+            Brazo robótico controlado por Arduino. Utiliza servomotores para simular movimientos humanos.
+          </p>
+        </div>
+      </div>
+
+      
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="/images/proyecto2.png" class="w-full h-40 object-cover" alt="Proyecto 2">
+        <div class="p-5">
+          <h2 class="text-xl font-semibold mb-2">Casa inteligente</h2>
+          <p class="text-gray-600 text-sm mb-4">
+            Casa inteligente con sensores y actuadores controlados vía una aplicación móvil.
+          </p>
+        </div>
+      </div>
+
+   
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="/images/proyecto3.png" class="w-full h-40 object-cover" alt="Proyecto 3">
+        <div class="p-5">
+          <h2 class="text-xl font-semibold mb-2">Robot de pelea</h2>
+          <p class="text-gray-600 text-sm mb-4">
+            creación de un robot de pelea controlado por Bluetooth utilizando Arduino. 
+          </p>
+        </div>
+      </div>
+
+      
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="/images/proyecto4.png" class="w-full h-40 object-cover" alt="Proyecto 4">
+        <div class="p-5">
+          <h2 class="text-xl font-semibold mb-2">Juego en godot</h2>
+          <p class="text-gray-600 text-sm mb-4">
+            creación de un juego en godot donde un personaje debe superar obstáculos para llegar a la meta.
+          </p>
+        </div>
+      </div>
+
+      
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="/images/proyecto5.png" class="w-30 mx-auto mb-3" alt="Proyecto 5">
+        <div class="p-5">
+          <h2 class="text-xl font-semibold mb-2">Proyecto 5</h2>
+          <p class="text-gray-600 text-sm mb-4">
+            creación de un juego en pygame donde el cuadro debe esquivar los obstáculos que se le presentan.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</DashboardLayout>

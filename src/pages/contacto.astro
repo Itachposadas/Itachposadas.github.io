@@ -1,0 +1,75 @@
+---
+import DashboardLayout from "../layouts/DashboardLayout.astro";
+---
+
+<DashboardLayout title="Contacto">
+
+  <div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
+    <div class="bg-white max-w-4xl mx-auto w-full">
+      <div class="grid grid-cols-6 h-full">
+        
+        
+        <div class="bg-blue-900 p-10 col-span-2">
+          <h2 class="mb-10 font-bold text-2xl text-blue-100 relative before:block before:absolute before:bg-sky-300 before:content-[''] before:w-20 before:h-1 before:-skew-y-3 before:-bottom-4">
+            Información de Contacto
+          </h2>
+
+          <p class="font-bold text-blue-100 py-8 border-b border-blue-700">
+            Dirección
+            <span class="font-normal text-xs text-blue-300 block">San José del Rincón, México</span>
+          </p>
+
+          <p class="font-bold text-blue-100 py-8 border-b border-blue-700">
+            Teléfono
+            <span class="font-normal text-xs text-blue-300 block">+52 7121006214</span>
+          </p>
+
+          <p class="font-bold text-blue-100 py-8 border-b border-blue-700">
+            Facebook
+            <span class="font-normal text-xs text-blue-300 block">Umb San José del Rincón</span>
+          </p>
+
+          <p class="font-bold text-blue-100 py-8 border-b border-blue-700">
+            Sitio Web
+            <span class="font-normal text-xs text-blue-300 block">http://sidiumb.umb.edu.mx:8088/</span>
+          </p>
+        </div>
+
+        
+        <div class="bg-blue-50 p-14 col-span-4">
+          
+          <h2 class="mb-14 font-bold text-4xl text-blue-900 relative before:block before:absolute before:bg-sky-300 before:content-[''] before:w-20 before:h-1 before:-skew-y-3 before:-bottom-4">
+            Enviar mensaje
+          </h2>
+
+          <form action="https://formspree.io/f/xblwrnaq" method="POST" class="space-y-6">
+
+            <div class="grid gap-6 mb-6 grid-cols-2">
+              <input name="nombre" class="py-4 bg-white rounded-full px-6 placeholder:text-xs" placeholder="Nombre" />
+
+              <input name="apellido" class="py-4 bg-white rounded-full px-6 placeholder:text-xs" placeholder="Apellido" />
+            </div>
+
+            <div class="grid gap-6 mb-6 grid-cols-2">
+              <input name="correo" class="py-4 bg-white rounded-full px-6 placeholder:text-xs" placeholder="Correo electrónico" />
+
+              <input name="asunto" class="py-4 bg-white rounded-full px-6 placeholder:text-xs" placeholder="Asunto" />
+            </div>
+
+            <textarea name="mensaje" class="w-full rounded-2xl placeholder:text-xs px-6 py-4" placeholder="Escribe tu mensaje aquí" rows="8"></textarea>
+
+            <div class="flex justify-center">
+              <button class="rounded-full bg-blue-900 text-white font-bold py-4 px-6 min-w-40 hover:bg-blue-800 transition-all">
+                Enviar
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</DashboardLayout>
