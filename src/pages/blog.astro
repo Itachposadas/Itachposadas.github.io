@@ -1,0 +1,124 @@
+---
+import DashboardLayout from "../layouts/DashboardLayout.astro";
+---
+
+<DashboardLayout title="Blog">
+  <section class="p-10">
+    <h1 class="text-3xl font-bold mb-6">Blog personal</h1>
+
+    <p class="text-gray-700 mb-10 max-w-2xl">
+      En este blog comparto experiencias relacionadas con la escuela,
+      viajes, pasatiempos y aprendizajes personales a lo largo de mi formación.
+    </p>
+
+    <!-- Lista de publicaciones -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Post 1 -->
+      <a
+        href="/posts/post-1"
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition block"
+      >
+        <div class="p-5">
+          <h2 class="text-xl font-semibold mb-2">
+            Mi primera publicación
+          </h2>
+          <p class="text-gray-600 text-sm">
+            Introducción a mi blog personal y a lo que compartiré en este espacio.
+          </p>
+        </div>
+      </a>
+
+      <!-- Post 2 -->
+      <a
+        href="/posts/post-2"
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition block"
+      >
+        <div class="p-5">
+          <h2 class="text-xl font-semibold mb-2">
+            Un viaje inolvidable
+          </h2>
+          <p class="text-gray-600 text-sm">
+            Una experiencia de viaje que me dejó grandes aprendizajes.
+          </p>
+        </div>
+      </a>
+
+      <!-- Post 3 -->
+      <a
+        href="/posts/post-3"
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition block"
+      >
+        <div class="p-5">
+          <h2 class="text-xl font-semibold mb-2">
+            Mi pasatiempo favorito
+          </h2>
+          <p class="text-gray-600 text-sm">
+            Una actividad que disfruto realizar en mi tiempo libre.
+          </p>
+        </div>
+      </a>
+
+       <!-- Post 4 -->
+      <a
+        href="/posts/post-4"
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition block"
+      >
+        <div class="p-5">
+          <h2 class="text-xl font-semibold mb-2">
+            Mi vida como estudiante
+          </h2>
+          <p class="text-gray-600 text-sm">
+            Explicare un poco sobre mi vida estudiantil y mis retos.
+          </p>
+        </div>
+      </a>
+
+      <!-- Post 5 -->
+      <a
+        href="/posts/post-5"
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition block"
+      >
+        <div class="p-5">
+          <h2 class="text-xl font-semibold mb-2">
+            Mi rutina diaria
+          </h2>
+          <p class="text-gray-600 text-sm">
+            Compartire como es un día típico en mi vida. Reseña (videojuego, serie o anime)
+          </p>
+        </div>
+      </a>
+
+       <!-- Post 6 -->
+      <a
+        href="/posts/post-6"
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition block"
+      >
+        <div class="p-5">
+          <h2 class="text-xl font-semibold mb-2">
+             Reseña (videojuego, serie o anime)
+          </h2>
+          <p class="text-gray-600 text-sm">
+            Compartire mi opinión sobre un videojuego, serie o anime que me haya gustado.
+          </p>
+        </div>
+      </a>
+
+      <!-- Post 7 -->
+      <a
+        href="/posts/post-7"
+        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition block"
+      >
+        <div class="p-5">
+          <h2 class="text-xl font-semibold mb-2">
+             Reflexión personal
+          </h2>
+          <p class="text-gray-600 text-sm">
+            Una reflexión sobre un tema que me haya impactado recientemente.
+          </p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+</DashboardLayout>

@@ -1,44 +1,72 @@
 <nav class="w-full bg-white shadow-md border-b sticky top-0 z-50">
   <div class="container mx-auto px-4 py-3">
     <div class="flex flex-col md:flex-row items-center justify-between">
-      
       <!-- Logo/Título -->
       <div class="flex items-center mb-4 md:mb-0">
-        <h1 class="text-2xl font-bold text-[#EC5252]">Mi Portafolio</h1>
+        <h1 class="text-2xl font-bold text-[#EC5252]">Mi Blog</h1>
       </div>
 
       <!-- Menú horizontal para desktop -->
       <ul class="hidden md:flex items-center space-x-6">
         <li>
-          <a href="/" class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-[#EC5252] transition-colors">
+          <a
+            href="/"
+            class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-[#EC5252] transition-colors"
+          >
             <img src="/images/casa.png" alt="Inicio" class="w-5 h-5" />
             <span class="font-medium">Inicio</span>
           </a>
         </li>
-        
+
         <li>
-          <a href="/acerca" class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-[#EC5252] transition-colors">
+          <a
+            href="/blog"
+            class="flex items-center space-x-3 px-3 py-3 rounded-lg hover:bg-gray-100 hover:text-[#EC5252]"
+          >
+            <img src="/images/blog.png" alt="Blog" class="w-5 h-5" />
+            <span class="font-medium">Blog</span>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/acerca"
+            class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-[#EC5252] transition-colors"
+          >
             <img src="/images/usuario.png" alt="Acerca de mí" class="w-5 h-5" />
             <span class="font-medium">Acerca de mí</span>
           </a>
         </li>
-        
+
         <li>
-          <a href="/habilidades" class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-[#EC5252] transition-colors">
-            <img src="/images/habilidades.png" alt="Habilidades" class="w-5 h-5" />
+          <a
+            href="/habilidades"
+            class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-[#EC5252] transition-colors"
+          >
+            <img
+              src="/images/habilidades.png"
+              alt="Habilidades"
+              class="w-5 h-5"
+            />
             <span class="font-medium">Habilidades</span>
           </a>
         </li>
-        
+
         <li>
-          <a href="/proyectos" class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-[#EC5252] transition-colors">
+          <a
+            href="/proyectos"
+            class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-[#EC5252] transition-colors"
+          >
             <img src="/images/laptop.png" alt="Proyectos" class="w-5 h-5" />
             <span class="font-medium">Proyectos</span>
           </a>
         </li>
-        
+
         <li>
-          <a href="/contacto" class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-[#EC5252] transition-colors">
+          <a
+            href="/contacto"
+            class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-[#EC5252] transition-colors"
+          >
             <img src="/images/correo.png" alt="Contacto" class="w-5 h-5" />
             <span class="font-medium">Contacto</span>
           </a>
@@ -46,9 +74,21 @@
       </ul>
 
       <!-- Botón menú hamburguesa para móvil -->
-      <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-gray-100 absolute right-4 top-3">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      <button
+        id="menu-toggle"
+        class="md:hidden p-2 rounded-lg hover:bg-gray-100 absolute right-4 top-3"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
     </div>
@@ -56,35 +96,64 @@
     <!-- Menú móvil expandible -->
     <ul id="mobile-menu" class="md:hidden mt-4 space-y-2 hidden">
       <li>
-        <a href="/" class="flex items-center space-x-3 px-3 py-3 rounded-lg hover:bg-gray-100 hover:text-[#EC5252]">
+        <a
+          href="/"
+          class="flex items-center space-x-3 px-3 py-3 rounded-lg hover:bg-gray-100 hover:text-[#EC5252]"
+        >
           <img src="/images/casa.png" alt="Inicio" class="w-5 h-5" />
           <span class="font-medium">Inicio</span>
         </a>
       </li>
-      
+
       <li>
-        <a href="/acerca" class="flex items-center space-x-3 px-3 py-3 rounded-lg hover:bg-gray-100 hover:text-[#EC5252]">
+        <a
+          href="/blog"
+          class="flex items-center space-x-3 px-3 py-3 rounded-lg hover:bg-gray-100 hover:text-[#EC5252]"
+        >
+          <img src="/images/blog.png" alt="Blog" class="w-5 h-5" />
+          <span class="font-medium">Blog</span>
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="/acerca"
+          class="flex items-center space-x-3 px-3 py-3 rounded-lg hover:bg-gray-100 hover:text-[#EC5252]"
+        >
           <img src="/images/usuario.png" alt="Acerca de mí" class="w-5 h-5" />
           <span class="font-medium">Acerca de mí</span>
         </a>
       </li>
-      
+
       <li>
-        <a href="/habilidades" class="flex items-center space-x-3 px-3 py-3 rounded-lg hover:bg-gray-100 hover:text-[#EC5252]">
-          <img src="/images/habilidades.png" alt="Habilidades" class="w-5 h-5" />
+        <a
+          href="/habilidades"
+          class="flex items-center space-x-3 px-3 py-3 rounded-lg hover:bg-gray-100 hover:text-[#EC5252]"
+        >
+          <img
+            src="/images/habilidades.png"
+            alt="Habilidades"
+            class="w-5 h-5"
+          />
           <span class="font-medium">Habilidades</span>
         </a>
       </li>
-      
+
       <li>
-        <a href="/proyectos" class="flex items-center space-x-3 px-3 py-3 rounded-lg hover:bg-gray-100 hover:text-[#EC5252]">
+        <a
+          href="/proyectos"
+          class="flex items-center space-x-3 px-3 py-3 rounded-lg hover:bg-gray-100 hover:text-[#EC5252]"
+        >
           <img src="/images/laptop.png" alt="Proyectos" class="w-5 h-5" />
           <span class="font-medium">Proyectos</span>
         </a>
       </li>
-      
+
       <li>
-        <a href="/contacto" class="flex items-center space-x-3 px-3 py-3 rounded-lg hover:bg-gray-100 hover:text-[#EC5252]">
+        <a
+          href="/contacto"
+          class="flex items-center space-x-3 px-3 py-3 rounded-lg hover:bg-gray-100 hover:text-[#EC5252]"
+        >
           <img src="/images/correo.png" alt="Contacto" class="w-5 h-5" />
           <span class="font-medium">Contacto</span>
         </a>
