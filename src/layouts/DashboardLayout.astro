@@ -1,8 +1,7 @@
 ---
 const { title } = Astro.props;
 
-import Sidebar from "../components/Sidebar.astro";
-import Navbar from "../components/NavLink.astro";
+import TopNavigation from "../components/TopNavigation.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 ---
@@ -13,20 +12,16 @@ import "../styles/global.css";
     <title>{title}</title>
   </head>
 
-  <body class="h-full flex bg-gray-100">
-    <Sidebar />
+  <body class="min-h-screen flex flex-col bg-gray-100"> <!-- Cambiado: min-h-screen y flex-col -->
+    <TopNavigation />
 
-   
-    <main class="flex flex-col min-h-screen w-full bg-gray-50">
-
-      <Navbar title={title} />
-
-    
-      <section class="flex-grow p-10">
+    <!-- Contenedor principal que crece -->
+    <main class="flex-grow bg-gray-50"> <!-- Añadido flex-grow -->
+      <section class="p-6 md:p-10">
         <slot />
       </section>
-
-      <Footer />
     </main>
+
+    <Footer />
   </body>
 </html>
