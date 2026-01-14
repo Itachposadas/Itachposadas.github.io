@@ -6,17 +6,25 @@ author: "Ivan Posadas"
 tags: ["blog", "astro", "escuela"]
 ---
 
+<div class="post-container">
+
+<a href="/blog" class="btn-back">⬅ Regresar</a>
+
 # Mi primera publicación en el blog
 
-Publicado el: 2026-01-08
+<p class="post-date">Publicado el: 2026-01-08</p>
 
-Este es mi primer post usando **Astro y Markdown**.  
+<p class="post-text">
+Este es mi primer post usando <strong>Astro y Markdown</strong>.
 Aquí compartiré experiencias relacionadas con la escuela y mi crecimiento personal.
+</p>
 
 ## ¿Por qué hice este blog?
 
-- Aprender Astro
-- Practicar Markdown
-- Cumplir con el proyecto escolar
+<ul class="post-list">
+  <li>Aprender Astro</li>
+  <li>Practicar Markdown</li>
+  <li>Cumplir con el proyecto escolar</li>
+</ul>
 
-Seguiré agregando más publicaciones próximamente.
+</div>
