@@ -1,0 +1,39 @@
+---
+const { title, pubDate } = Astro.props;
+---
+
+<article class="max-w-3xl mx-auto px-6 py-12 text-gray-800 dark:text-gray-100">
+
+  <!-- Contenido del post -->
+  <h1 class="text-4xl font-bold mb-2">{title}</h1>
+  <p class="text-sm text-gray-500 dark:text-gray-400 mb-8">
+    Publicado el: {pubDate}
+  </p>
+
+  <div class="prose dark:prose-invert max-w-none">
+    <slot />
+  </div>
+
+  <!-- Botón regresar -->
+  <div class="flex justify-center mt-16">
+    <a
+      href="/blog"
+      class="group inline-flex items-center gap-2
+             px-6 py-3
+             text-white font-semibold
+             bg-gradient-to-r from-indigo-600 to-purple-600
+             rounded-full
+             shadow-lg shadow-indigo-500/40
+             transition-all duration-300
+             hover:scale-105 hover:shadow-purple-500/50
+             active:scale-95">
+
+      <span class="transition-transform duration-300 group-hover:-translate-x-1">
+        ⬅
+      </span>
+
+      <span>Regresar al blog</span>
+    </a>
+  </div>
+
+</article>
