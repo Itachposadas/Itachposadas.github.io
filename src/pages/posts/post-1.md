@@ -1,19 +1,29 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: "Mi primera publicación en el blog"
-pubDate: 2026-01-08
+pubDate: 2026-01-14
 description: "Primera entrada de mi blog personal creado con Astro."
 author: "Ivan Posadas"
 tags: ["blog", "astro", "escuela"]
 ---
 
-Este es mi primer post usando **Astro y Markdown**.  
+<div class="post-container">
+
+
+# Mi primera publicación en el blog
+
+<p class="post-date">Publicado el: 2026-01-08</p>
+
+<p class="post-text">
+Este es mi primer post usando <strong>Astro y Markdown</strong>.
 Aquí compartiré experiencias relacionadas con la escuela y mi crecimiento personal.
+</p>
 
 ## ¿Por qué hice este blog?
 
-- Aprender Astro
-- Practicar Markdown
-- Cumplir con el proyecto escolar
+<ul class="post-list">
+  <li>Aprender Astro</li>
+  <li>Practicar Markdown</li>
+  <li>Cumplir con el proyecto escolar</li>
+</ul>
 
-Seguiré agregando más publicaciones próximamente.
+</div>
